@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Josefin+Sans:wght@300&family=Mulish&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+	background-color: #272727;
+}
+
+#banner {
+	width: 100%;
+}
+
+header {
+    background: #333232;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 20%;
+}
+
+.nav-wrapper {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+	font-family: "Mulish", serif;
+}
+
+nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    color: #f0f0f0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.main{
+	background: #333232;
+	padding: 30px;
+}
+
+.main-title {
+	margin: 15px;
+	padding-left: 20px;
+	color: #f0f0f0;;
+}
+
+
+.center-title {
+	margin-bottom: 15px;
+	text-align: center;
+	color: #f0f0f0;;
+}
+
+p {
+	margin: 5px;
+	text-align: center;
+	color: #f0f0f0;;
+}
+
+#mission {
+	font-size: 20px
+}
+
+em strong {
+	color: #FF0000;
+}
+
+.itens {
+	font-style: italic
+}
+
+.benefits {
+	padding: 20px;
+}
+
+.ul-benefits {
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 150px;
+	color: #f0f0f0;;
+	font-size: 30px;
+	text-align: center;
+}
+
+.img-benefits {
+	width: 50%;
+}

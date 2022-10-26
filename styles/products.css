@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Josefin+Sans:wght@300&family=Mulish&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+body {
+	background-color: #272727;
+}
+
+header {
+    background: #333232;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 20%;
+}
+
+.nav-wrapper {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    font-family: "Mulish", serif;
+}
+
+nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{   
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.products {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.products li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    background-color: #f3ecd8;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: #1c252f 5px solid;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+}
+
+.products li:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.products h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1c252f;
+    font-family: "Pacifico", serif;
+}
+
+.products img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.product-description{
+    font-size: 18px;
+    color: #1c252f;
+    font-family: "Josefin Sans", serif;
+    font-weight: 600;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1c252f;
+    margin-top: 10px;
+    font-family: "Baloo Da 2", serif;
+}
