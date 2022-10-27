@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Scissors - Produtos</title>
-        <link rel="stylesheet" href="styles/products.css">
+        <title>Scissors - Contato</title>
+        <link rel="stylesheet" href="styles/contact.css">
     </head>
     <body>
         <header>
@@ -19,26 +18,15 @@
             </div>
         </header>
         <main>
-            <ul class="products">
-                <li>
-                    <h2>Cabelo</h2>
-                    <img src="images/hair.png" alt="Cabelo">
-                    <p class="product-description">Na tesoura ou máquina, como o cliente preferir</p>
-                    <p class="product-price">R$ 25,00</p>
-                </li>
-                <li>
-                    <h2>Barba</h2>
-                    <img src="images/beard.png" alt="Barba">
-                    <p class="product-description">Corte e desenho de barba profissional</p>
-                    <p class="product-price">R$ 18,00</P>
-                </li>
-                <li>
-                    <h2>Cabelo + Barba</h2>
-                    <img src="images/hair+beard.png" alt="Cabelo+Barba">
-                    <p class="product-description">Pacote completo de cabelo e barba</p>
-                    <p class="product-price">R$ 35,00</p>
-                </li>
-            </ul>
+            <form class="form">
+                <label for="name">Nome</label>
+                <input type="text" id="name">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <label for="telephone">Telefone</label>
+                <input type="text" id="telephone">
+                <input type="submit" value="Enviar" id="submit">
+            </form>
         </main>
         <footer>
             <div class="footer-wrapper">
