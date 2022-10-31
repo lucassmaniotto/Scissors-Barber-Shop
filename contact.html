@@ -7,7 +7,7 @@
     <body>
         <header>
             <div class="nav-wrapper">
-                <h1><img class="logo" src="images/logo.png"></h1>
+                <h1><img class="logo" src="images/logo.png" alt="Logo Scissors"></h1>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -19,13 +19,58 @@
         </header>
         <main>
             <form class="form">
-                <label for="name">Nome</label>
-                <input type="text" id="name">
-                <label for="email">Email</label>
-                <input type="text" id="email">
-                <label for="telephone">Telefone</label>
-                <input type="text" id="telephone">
-                <input type="submit" value="Enviar" id="submit">
+                <div>
+                    <label for="name">Nome</label >
+                    <input type="text" id="name" class="input-text-pattern" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-text-pattern" placeholder="seuemail@dominio.com" required>
+                    <label for="telephone">Telefone</label>
+                    <input type="tel" id="telephone" class="input-text-pattern" placeholder="(XX) XXXXX-XXXX" required>
+                    <label for="message">Mensagem</label>
+                    <textarea cols="70" rows="7" id="message" class="input-text-pattern"></textarea>
+                </div>
+                <div class="radio-pattern">
+                    <p>Como prefere nosso contato?</p>
+                    <label for="radio-email"><input type="radio" name="contact" value="email" id="radio-email">Email</label>
+                    <label for="radio-phone"><input type="radio" name="contact" value="telephone" id="radio-phone">Telefone</label>
+                    <label for="radio-whatsapp"><input type="radio" name="contact"value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                </div>
+                <div class="div-hours">
+                    <div>
+                        <p>Selecione o horário de atendimento</p>
+                        <select class="select-pattern">
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    </div>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Dia</th>
+                                    <th>Horário</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Segunda</td>
+                                    <td>08:00 - 20:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Quarta</td>
+                                    <td>08:00 - 20:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Sexta</td>
+                                    <td>08:00 - 20:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <label for="checkbox" class="checkbox-label"><input type="checkbox" id="checkbox">Desejo receber novidades por email</label>
+                <input type="submit" value="Enviar" id="submit" class="send">
             </form>
         </main>
         <footer>
@@ -34,7 +79,7 @@
                     <p>© 2022 Scissors</p>
                     <p>Todos os direitos reservados.</p>
                     <ul class="footer-icons">
-                        <li><a href="https://www.instagram.com/alpiste_punk/"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://github.com/lucassmaniotto"><i class="fa-brands fa-github"></i></a></li>
                         <li><a href="https://twitter.com/alpiste_punk/"><i class="fa-brands fa-twitter"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/lucas-smaniotto-a7092b1a0/"><i class="fa-brands fa-linkedin-in"></i></a></li>
                     </ul>

@@ -51,28 +51,25 @@ nav a{
 
 nav a:hover {
     opacity: 0.8;
+    transition: 0.5s;
 }
 
 main{
     background-image: url(../images/banner.jpg);
     background-size: cover;
     background-position: center;
-    height: 70vh;
     display: flex;
     justify-content: center;
 }
 
 form{
-    position: relative;
-    top: 80px;
-    width: 940px;
+    padding: 1.5% 0 2.5% 0;
     margin: 0 auto;
     font-family: "Mulish", serif;
     color: #333232;
-    
 }
 
-form label{
+form label, form p{
     display: block;
     margin: 10px 0;
     font-size: 18px;
@@ -80,17 +77,72 @@ form label{
     font-weight: 500;
 }
 
-form input{
+.input-text-pattern{
     width: 100%;
     padding: 10px 25px;
     margin: 10px 0;
     border: 1px solid #333232;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 18px;
     font-family: "Mulish", serif;
     color: #333232;
     background-color: #f3ecd8;
     box-shadow: 0 0 10px #000;
+}
+
+form input[type=radio]{
+    margin: 0 10px 0 0;
+}
+
+.radio-pattern{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.div-hours{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-hours table{
+    margin-top: 20px;
+    margin-right: 100px;
+    font-size: 18px;
+    font-family: "Mulish", serif;
+    color: #333232;
+}
+
+.select-pattern{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    width: 150px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #000;
+    font-family: "Mulish", serif;
+    font-size: 18px;
+    color: #1c252f;
+    background-color: #f3ecd8;
+    box-shadow: 0 0 10px #000;
+}
+
+.select-pattern option{
+    color: #1c252f;
+    border: none;
+}
+
+table{
+    font-family: "Mulish", serif;
+    font-size: 18px;
+    color: #333232;
+}
+
+#checkbox{
+    margin: 30px 10px 0 0;
 }
 
 #submit{
@@ -110,12 +162,14 @@ form input{
 #submit:hover{
     color: #f3ecd8;
     background-color: #283646;
+    transition: 0.5s background-color;
 }
+
 
 footer{
     background: #333232;
-    width: 100%;;
-    position: absolute;
+    width: 100%;
+    position: static;
     bottom: 0;
     left: 0;
     padding: 10px 0;
