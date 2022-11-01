@@ -14,13 +14,7 @@ body {
 	background-color: #272727;
 }
 
-#banner {
-	width: 100%;
-	position: relative;
-}
-
 header {
-	position: relative;
     background: #333232;
     padding: 10px 0;
 }
@@ -33,13 +27,14 @@ header {
     position: relative;
     width: 940px;
     margin: 0 auto;
-	font-family: "Mulish", serif;
+    font-family: "Mulish", serif;
 }
 
 nav {
     position: absolute;
     top: 80px;
     right: 0;
+  
 }
 
 nav li{
@@ -47,12 +42,10 @@ nav li{
     margin: 0 0 0 15px;
 }
 
-nav a{
-    color: #f0f0f0;
+nav a{   
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
-    
 }
 
 nav a:hover {
@@ -60,61 +53,93 @@ nav a:hover {
     transition: 0.5s;
 }
 
-.main{
-	background: #333232;
-	padding: 30px;
+main {
+	width: 100%;
+	margin: 0 auto;
 }
 
-.main-title {
-	margin: 15px;
-	padding-left: 20px;
-	color: #f0f0f0;;
+section{
+    text-align: center;
+    padding: 80px 0;
 }
 
-
-.center-title {
-	margin-bottom: 15px;
-	text-align: center;
-	color: #f0f0f0;;
+section p {
+    font-size: 1em;
+    font-family: "Mulish", serif;
 }
 
-.about p {
-	margin: 5px;
-	text-align: center;
-	color: #f0f0f0;;
+.banner{
+    position: relative;
+    width: 100%;
 }
 
-.about #mission {
-	font-size: 20px
+.about p{
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-.about em strong {
-	color: #FF0000;
+.title{
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Pacifico", serif;
+    font-weight: 500;
+    text-shadow: 0 0 5px #000;
+    margin: 0 0 1em;
 }
 
-.itens {
-	font-style: italic
+.about strong{
+    font-weight: bold;
 }
 
-.benefits {
-	padding: 20px;
+.about em{
+    font-style: italic;
 }
 
-.ul-benefits {
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: 150px;
-	color: #f0f0f0;;
-	font-size: 30px;
-	text-align: center;
+.map{
+    padding: 3em 0 9em;
 }
 
-.img-benefits {
-	width: 50%;
+.map p{
+    margin: 0 0 2em;
 }
+
+.benefits{
+    width: 100%;
+    background-image: url(../images/benefits.jpg);
+    background-size: cover;
+}
+
+.benefits-content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ul-benefits{
+    font-family: "Mulish", serif;
+    font-size: 1.5em;
+    text-align: center;
+    width: 40%;
+    margin: 0 1em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.video{
+    width: 100%;
+    margin: 1em 10em 0 0;
+    display: inline;
+    vertical-align: top;
+}
+
 
 footer{
     background: #333232;
@@ -129,6 +154,7 @@ footer{
 .footer-wrapper h2{
     font-family: "Pacifico", serif;
     font-weight: 300;
+    text-shadow: 0 0 5px #000;
 }
 
 .footer-wrapper p{

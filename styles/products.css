@@ -21,7 +21,7 @@ header {
 }
 
 main{
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/banner-products.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -131,6 +131,7 @@ footer{
 .footer-wrapper h2{
     font-family: "Pacifico", serif;
     font-weight: 300;
+    text-shadow: 0 0 5px #000;
 }
 
 .footer-wrapper p{
