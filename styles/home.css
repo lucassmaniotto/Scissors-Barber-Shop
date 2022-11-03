@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background: #333232;
+    background: linear-gradient(#1b1b1b, #272727);
     padding: 10px 0;
 }
 
@@ -73,19 +73,29 @@ section p {
     width: 100%;
 }
 
-.about p{
-    padding: 5px;
-    box-sizing: border-box;
-}
-
 .title{
     position: relative;
     text-align: center;
     font-size: 2em;
     font-family: "Pacifico", serif;
     font-weight: 500;
-    text-shadow: 0 0 5px #000;
+    text-shadow: 5px 5px 5px #000;
     margin: 0 0 1em;
+}
+
+.about{
+    background: linear-gradient(#272727, #1b1b1b);
+}
+
+.about-text{
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+}
+
+.about p{
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .about strong{
@@ -96,12 +106,24 @@ section p {
     font-style: italic;
 }
 
-.map{
-    padding: 3em 0 9em;
+#products-button{
+    background: transparent;
+    border: 1px solid #f0f0f0;
+    padding: 10px 20px;
+    margin: 2em 0 1em 0;
+    font-size: 1em;
+    font-family: "Mulish", serif;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
-.map p{
-    margin: 0 0 2em;
+#products-button:hover{
+    background: black;
+    color: #f0f0f0;
+    border: 1px solid black;
+    transition: 0.5s;
+    scale: 1.1;
 }
 
 .benefits{
@@ -110,17 +132,21 @@ section p {
     background-size: cover;
 }
 
-.benefits-content{
+.benefits-content li{
     width: 100%;
-    margin: 0 auto;
+    margin: auto ;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
 }
 
 .ul-benefits{
     font-family: "Mulish", serif;
     font-size: 1.5em;
     text-align: center;
-    width: 40%;
-    margin: 0 1em;
+    width: 560;
+    height: 300;
+    margin: 0 5em;
     display: inline-block;
     vertical-align: top;
 }
@@ -133,16 +159,40 @@ section p {
     font-weight: bold;
 }
 
+.itens:before{
+    content: "✄⠀";
+}
+
 .video{
-    width: 100%;
     margin: 1em 10em 0 0;
+    margin-right: 0;
     display: inline;
     vertical-align: top;
 }
 
+.video > iframe{
+    width: 560px;
+    height: 315px;
+    transition: 400ms;
+    box-shadow: 10px 10px 15px #000000;
+}
+
+.map{
+    padding: 3em 0 9em;
+    background: linear-gradient(#1b1b1b, #272727);
+}
+
+.map p{
+    margin: 0 0 2em;
+}
+
+.map-content{
+    width: 940px;
+	margin: 0 auto;
+}
 
 footer{
-    background: #333232;
+    background: linear-gradient(#272727, #1b1b1b, black);
     width: 100%;;
     position: static;
     bottom: 0;
@@ -154,7 +204,7 @@ footer{
 .footer-wrapper h2{
     font-family: "Pacifico", serif;
     font-weight: 300;
-    text-shadow: 0 0 5px #000;
+    text-shadow: 5px 5px 5px #000;
 }
 
 .footer-wrapper p{
@@ -171,4 +221,32 @@ footer{
     margin-left: 5px;
     color: rgb(205, 200, 200);
     text-shadow: 0.1rem 0.1rem 1px black;
+}
+
+@media screen and (max-width:480px){
+    .nav-wrapper, .about, .benefits-content, .map-content, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+    };
+
+    .ul-benefits li, .video > iframe{
+        width: 100%;
+    }
+
+    .ul-benefits{
+        margin: 0 0 1em 0;
+    }
+
+    .video > iframe{
+        width: auto;
+        height: auto;
+    }
 }

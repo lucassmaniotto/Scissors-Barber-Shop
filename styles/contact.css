@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background: #333232;
+    background: linear-gradient(#1b1b1b, #272727);
     padding: 10px 0;
 }
 
@@ -176,8 +176,8 @@ table{
 
 
 footer{
-    background: #333232;
-    width: 100%;
+    background: linear-gradient(#272727, #1b1b1b, black);
+    width: 100%;;
     position: static;
     bottom: 0;
     left: 0;
@@ -188,7 +188,7 @@ footer{
 .footer-wrapper h2{
     font-family: "Pacifico", serif;
     font-weight: 300;
-    text-shadow: 0 0 5px #000;
+    text-shadow: 5px 5px 5px #000;
 }
 
 .footer-wrapper p{
