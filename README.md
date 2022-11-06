@@ -8,6 +8,7 @@ Sugestões de melhorias são muito bem vindas!
 | :sparkles: Nome        | **Scissors**
 | :label: Tecnologias | html, css
 |  🖥  Curso     | https://cursos.alura.com.br/formacao-html-e-css
+| :rocket: URL         | https://lucassmaniotto.github.io/Scissors-Barber-Shop/
 
 ![](https://imgur.com/gallery/4eo97nI#vitrinedev)
 
